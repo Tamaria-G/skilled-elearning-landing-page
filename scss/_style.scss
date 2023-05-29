@@ -1,0 +1,279 @@
+body {
+    overflow-x: hidden;
+    background: linear-gradient(180deg, #FFFFFF 60%, #F0F1FF 100%);
+    header {
+        padding-top: 24px;
+        .container {
+            @include container;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            @media (max-width: 768px){
+                .logo {
+                    width: 90px;
+                    img {
+                        width: 100%
+                    }
+                }
+            }
+
+            button {
+                @include button;
+                background-color: $main-color;
+                
+                @media (max-width: 768px){
+                    width: 140px;
+                    height: 48px;
+                }
+            }
+            button:hover {
+                background-color: $button-1-hov;
+                cursor: pointer;
+            }
+        }
+    }
+    .s-1 {
+        
+        .container {
+            @include container;
+            margin-top: 172px;
+            display: flex;
+            
+            
+            
+            .txt-block {
+                max-width: 457px;
+                width: 100%;
+                color: $main-color;
+                margin-right: 162px;
+
+                & > h1 {
+                    @include heading-XL;
+
+                    @media (max-width: 768px){
+                        @include heading-L;
+                    }
+                }
+                & > p {
+
+                    @include txt-M;
+                    margin: 29px 0 40px 0;
+                    color: $txt-color;
+
+                    @media (max-width: 768px) {
+                        @include txt-S;
+                        max-width: 398px;
+                        width: 100%;
+                    }
+                }
+                button {
+                    @include button;
+                    background: $gradient-1;
+                }
+                button:hover {
+                    background: $but-2-hov;
+                }
+            }
+            .img {
+                max-width: 992px;
+                width: 100%;
+                // position: absolute;
+                // top: -146px;
+                // right: -336px;
+                margin: -354px -420px 0 0;
+                
+                z-index: -1 ;
+                
+                .img-desktop {
+                    width: 100%;
+                }
+                .img-tablet, .img-mobile {
+                    display: none;
+                }
+                @media (max-width: 768px){
+                    .img-desktop {
+                        display: none;
+                    }
+                    .img-tablet {
+                        display: block;
+                        max-width: 640px;
+                        height: 640px;
+                        margin:  116px 0 0 -283px;
+                        
+                    }
+                }
+                @media (max-width: 375px) {
+                    margin: 0;
+                    .img-desktop, .img-tablet {
+                        display: none;
+                    }
+
+                    .img-mobile {
+                        display: block;
+                        max-width: 327px;
+                        width: 100%;
+                        margin: 70px auto 60px auto;
+                        
+                    }
+                }
+            }
+            @media (max-width: 375px){
+                flex-direction: column;
+                margin-top: 38px;
+            }
+
+        }
+    }
+
+    // start section 2
+
+
+    .s-2 {
+       
+       
+        .container {
+            
+            @include container;
+            margin-top: 226px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            padding-top: 24px;
+            align-items: center;
+            
+
+            .first-card {
+
+                background: $gradient-1;
+                color: $bg-txt;
+                
+                box-shadow: 0px 25px 50px 0px #06168D0B;
+
+
+                & > h2 {
+                    @include heading-M;
+
+                    @media (max-width: 768px) {
+                        @include heading-S;
+                    }
+                }
+            }
+
+            .icon {
+                margin-top: -90px;
+            }
+            .card {
+                max-width: 350px;
+                width: 100%;
+                height: 322px;
+                border-radius: 15px;
+                padding: 64px 32px;
+                background-color: $bg-txt;
+                box-shadow: 0px 25px 50px 0px #06168D0B;
+                margin-bottom: 80px;
+
+                
+                & > h3 {
+                    @include heading-S;
+                    margin: 32px 0 24px 0;
+                    color: $main-color;
+
+                    @media (max-width: 768px) {
+                        @include txt-responsive-M;
+                    }
+
+                }
+                & > p {
+                    @include txt-M;
+                    color: $txt-color;
+
+                    @media (max-width: 768px) {
+                        @include txt-S
+                    }
+                }
+
+                & > button {
+                    border: none;
+                    background-color: #FFFFFF;
+                    font-family: "Plus Jakarta Sans";
+                    font-style: normal;
+                    font-weight: 700;
+                    font-size: 18px;
+                    line-height: 28px;
+                    color: $pink;
+                    margin-top: 24px;
+                }
+                .m-t {
+                    margin-top: 52px;
+
+                    @media (max-width: 768px) {
+                        margin-top: 24px;
+                    }
+                }
+                & > button:hover {
+                    cursor: pointer;
+                    color: $pink-hov ;
+                }
+
+                @media (max-width: 768px){
+                    margin-bottom: 60px;
+                    
+                }
+                
+            }
+
+            @media (max-width: 768px){
+                margin-top: 100px;
+               
+            }
+            @media (max-width: 375px) {
+                margin-top: 0;
+            }
+        }
+    }
+    footer {
+        margin-top: 60px;
+        background-color: $main-color;
+        max-width: 100vw;
+        height: 120px;
+        padding: 32px 0 32px 0;
+        
+
+        .container {
+            @include container;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            @media (max-width: 768px){
+                .logo {
+                    width: 90px;
+                    img {
+                        width: 100%
+                    }
+                }
+            }
+            
+            button {
+                @include button;
+                background: $gradient-2;
+                color: $bg-txt;
+
+                @media (max-width: 768px){
+                    width: 140px;
+                    height: 48px;
+                }
+            }
+            button:hover {
+                cursor: pointer;
+                background: $but-3-hov;
+
+            }
+        }
+
+        @media (max-width: 768px){
+            margin-top: 0;
+        }
+    }
+}

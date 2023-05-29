@@ -1,0 +1,76 @@
+// typography
+
+@mixin heading-XL {
+  font-family: "Plus Jakarta Sans";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 56px;
+  line-height: 71px;
+}
+
+@mixin heading-L {
+  font-family: "Plus Jakarta Sans";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 40px;
+  line-height: 50px;
+}
+
+@mixin heading-M {
+  font-family: "Plus Jakarta Sans";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 32px;
+  line-height: 40px;
+}
+
+@mixin heading-S {
+  font-family: "Plus Jakarta Sans";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 24px;
+  line-height: 30px;
+}
+
+@mixin txt-M {
+  font-family: "Plus Jakarta Sans";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 28px;
+}
+
+@mixin txt-S {
+  font-family: "Plus Jakarta Sans";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 26px;
+}
+
+// buttons
+
+@mixin button {
+  width: 167px;
+  height: 56px;
+  border-radius: 28px;
+  font-family: "Plus Jakarta Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 28px;
+  text-align: center;
+  border: none;
+  color: $bg-txt;
+}
+@mixin container {
+  max-width: 1110px;
+  width: 95%;
+  margin: 0 auto;
+}
+
+@mixin txt-responsive-M {
+    font-size: 20px;
+    line-height: 25px;
+}
+
