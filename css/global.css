@@ -142,7 +142,7 @@ body .s-1 .container .img .img-tablet, body .s-1 .container .img .img-mobile {
     margin: 116px 0 0 -283px;
   }
 }
-@media (max-width: 375px) {
+@media (max-width: 376px) {
   body .s-1 .container .img {
     margin: 0;
   }
@@ -156,7 +156,7 @@ body .s-1 .container .img .img-tablet, body .s-1 .container .img .img-mobile {
     margin: 70px auto 60px auto;
   }
 }
-@media (max-width: 375px) {
+@media (max-width: 376px) {
   body .s-1 .container {
     flex-direction: column;
     margin-top: 38px;
@@ -272,7 +272,7 @@ body .s-2 .container .card > button:hover {
     margin-top: 100px;
   }
 }
-@media (max-width: 375px) {
+@media (max-width: 376px) {
   body .s-2 .container {
     margin-top: 0;
   }
